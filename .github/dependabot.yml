@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "npm" # 对于 pnpm 项目，也使用 npm 作为依赖更新检查的基础
+    directory: "/" # 指定 package.json 文件所在的目录
+    schedule:
+      interval: "weekly" # 每周检查依赖更新
+    ignore:
+      - dependency-name: "some-package" # 如果有需要忽略的包，可以配置在这里
+    commit-message:
+      prefix: "chore(deps)" # 自定义提交信息前缀

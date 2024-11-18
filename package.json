@@ -1,0 +1,79 @@
+{
+  "name": "blog",
+  "version": "3.0.0",
+  "author": {
+    "url": "https://github.com/Fanceir",
+    "email": "fx_official@outlook.com",
+    "name": "Fanceir"
+  },
+  "repository": {
+    "url": "https://github.com/Fanceir/blog",
+    "type": "git"
+  },
+  "homepage": "https://fanxu.online",
+  "license": "MIT",
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "start:en": "docusaurus start --locale en",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear && rimraf changelog",
+    "serve": "docusaurus serve",
+    "format": "biome format --write ./src",
+    "lint": "biome check ./src",
+    "lint:fix": "biome check --write --unsafe ./src",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "index": "docker run -it --env-file=.env -e \"CONFIG=$(cat docsearch.json | jq -r tostring)\" algolia/docsearch-scraper"
+  },
+  "dependencies": {
+    "@docusaurus/core": "3.6.1",
+    "@docusaurus/plugin-ideal-image": "3.6.1",
+    "@docusaurus/plugin-pwa": "3.6.1",
+    "@docusaurus/plugin-vercel-analytics": "^3.6.1",
+    "@docusaurus/preset-classic": "^3.6.1",
+    "@docusaurus/theme-common": "^3.6.1",
+    "@docusaurus/theme-search-algolia": "3.6.1",
+    "@giscus/react": "^3.0.0",
+    "@lottiefiles/dotlottie-react": "^0.9.3",
+    "@popperjs/core": "^2.11.8",
+    "@radix-ui/react-slot": "^1.1.0",
+    "autoprefixer": "^10.4.20",
+    "blog": "file:",
+    "class-variance-authority": "^0.7.0",
+    "docusaurus-plugin-baidu-tongji": "0.0.0-beta.4",
+    "docusaurus-plugin-image-zoom": "^2.0.0",
+    "framer-motion": "^11.11.11",
+    "lottie-react": "^2.4.0",
+    "mini-svg-data-uri": "^1.4.4",
+    "ora": "^8.1.1",
+    "postcss": "^8.4.49",
+    "prism-react-renderer": "^2.4.0",
+    "promises-aplus-tests": "^2.1.2",
+    "raw-loader": "^4.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-github-calendar": "^4.5.1",
+    "react-icon-cloud": "^4.1.4",
+    "react-popper": "^2.3.0",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss": "^3.4.14"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@docusaurus/module-type-aliases": "3.6.1",
+    "@docusaurus/tsconfig": "^3.6.1",
+    "@docusaurus/types": "3.6.0",
+    "@iconify/react": "^5.0.2",
+    "@tailwindcss/typography": "^0.5.15",
+    "typescript": "~5.6.3"
+  },
+  "engines": {
+    "node": ">=20.0"
+  },
+  "packageManager": "pnpm@9.8.0"
+}
