@@ -65,7 +65,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@docusaurus/module-type-aliases": "3.6.1",
+    "@docusaurus/module-type-aliases": "3.7.0",
     "@docusaurus/tsconfig": "^3.6.1",
     "@docusaurus/types": "3.6.0",
     "@iconify/react": "^5.0.2",
